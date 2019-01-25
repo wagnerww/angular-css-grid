@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+}
+
+div.app{
+    position: relative;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 100px 1fr 50px;
+    grid-template-areas: 'header' 'jumbotron' 'main' 'footer';
+}
+
+header, main, footer, aside{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+header{
+    grid-area: header;
+    background-color: #3b3b3b;
+}
+
+main{   
+    grid-area: main;
+    background: #ededed;
+    color:#5b5b5b;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+aside{
+    background-color: #fafafa;
+    color:#5b5b5b;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #3b3b3b;
+}
