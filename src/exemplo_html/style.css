@@ -18,7 +18,7 @@ div.app{
     grid-template-areas: 'header' 'jumbotron' 'main' 'footer';
 }
 
-header, main, footer, aside{
+header, main, footer, .secao{
     position: relative;
     padding: 10px;
     text-align: center;
@@ -38,7 +38,7 @@ main{
     grid-gap: 15px;
 }
 
-aside{
+.secao{
     background-color: #fafafa;
     color:#5b5b5b;
 }
